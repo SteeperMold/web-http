@@ -3,7 +3,7 @@ from API.business import find_businesses
 from API.mapapi_PG import show_map
 
 ll, spn = get_ll_span(input('Введите адрес: '))
-drugstores = find_businesses(ll, spn, 'аптека')
+drugstores = find_businesses(ll, spn, 'аптека')[:10]
 
 points = []
 
